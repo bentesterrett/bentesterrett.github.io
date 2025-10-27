@@ -1,0 +1,32 @@
+
+body {
+    background-color: #ACBFA4;
+    color: #4E5340;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #E2E8CE;
+    border: 5px solid #4E5340;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #5171A5;
+    margin-bottom: 20px;
+}
+
+h2 {   
+    font-size: 2rem;
+
+}
+
