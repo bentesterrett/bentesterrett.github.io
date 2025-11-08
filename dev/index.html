@@ -37,6 +37,15 @@
                 <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
             </div>
         </div>
+        <!-- Decorative arch that dips into the next section. Uses an inline SVG so it scales responsively. -->
+        <svg class="hero-arch" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+            <!-- desktop/deeper curve -->
+            <path class="hero-arch-path hero-arch-path--desktop" d="M0,0 C300,120 900,120 1200,0 L1200,120 L0,120 Z"
+                style="fill:var(--color-surface);"></path>
+            <!-- mobile/flatter curve (shown only at small breakpoints via CSS) -->
+            <path class="hero-arch-path hero-arch-path--mobile" d="M0,0 C300,40 900,40 1200,0 L1200,120 L0,120 Z"
+                style="fill:var(--color-surface);"></path>
+        </svg>
     </section>
 
     <section id="about" class="about">
