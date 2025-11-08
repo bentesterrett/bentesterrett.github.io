@@ -50,12 +50,12 @@ body {
 
 /* Header / nav */
 .header {
-  /* Match hero colors and flow with the page (not sticky) */
+  /* Sticky header: keep it visible at the top of the viewport */
   background: var(--color-primary);
-  border-bottom: none;
-  position: static; /* no longer sticky */
-  top: auto;
-  z-index: auto;
+  /*border-bottom: 1px solid var(--color-border);*/
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .header-content {
   display: flex;
@@ -121,7 +121,7 @@ body {
 /* Hero */
 .hero {
   background: var(--color-primary);
-  padding: var(--spacing-3xl) 0 6rem; /* bottom padding leaves room for the arch */
+  padding: var(--spacing-2xl) 0 6rem; /* bottom padding leaves room for the arch */
   text-align: center;
   position: relative; /* contain the absolutely positioned svg arch */
   overflow: visible;
@@ -497,11 +497,16 @@ body {
     gap: 0;
     padding: 0; /* <-- removed horizontal padding so borders reach the edges */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    border-bottom: 1px solid #efefef;
+    border-bottom: none; /* remove thin white line under header on mobile */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
     box-sizing: border-box;
+  }
+
+  /* Hide header bottom border on mobile so there isn't a visible seam when the menu icon shows */
+  .header {
+    border-bottom: none;
   }
 
   .nav a {
